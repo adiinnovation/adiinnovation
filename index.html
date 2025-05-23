@@ -19,6 +19,11 @@
             padding: 2rem;
             text-align: center;
         }
+        header img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
         main {
             padding: 2rem;
             max-width: 900px;
@@ -38,11 +43,23 @@
             color: #0d6efd;
             text-decoration: none;
         }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>adiinnovation</h1>
+        <img src="logo.png" alt="Logo">
+        <h1>Your Name</h1>
         <p>Freelance Data Analyst | Transforming Data into Business Insights</p>
     </header>
     <main>
@@ -74,17 +91,26 @@
         <section>
             <h2>Sample Projects</h2>
             <ul>
-                <li>Retail Sales Dashboard for a Retail Shop</li>
-                <li>Automated Financial Reports for a Gold Shop</li>
-                <li>Customer Segmentation and Retention Analysis</li>
-                <li>Inventory Forecasting Model using Python</li>
+                <li><a href="#" target="_blank">Retail Sales Dashboard for a Retail Shop</a></li>
+                <li><a href="#" target="_blank">Automated Financial Reports for a Gold Shop</a></li>
+                <li><a href="#" target="_blank">Customer Segmentation and Retention Analysis</a></li>
+                <li><a href="#" target="_blank">Inventory Forecasting Model using Python</a></li>
             </ul>
+        </section>
+        <section>
+            <h2>Project Gallery</h2>
+            <div class="gallery">
+                <img src="raw-data.jpg" alt="Raw Data Sample">
+                <img src="dashboard-1.jpg" alt="Dashboard View 1">
+                <img src="dashboard-2.jpg" alt="Dashboard View 2">
+                <img src="chart-example.jpg" alt="Visualized Chart">
+            </div>
         </section>
         <section class="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:adiinnovationds@gmail.com">yourname@email.com</a></p>
+            <p>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">linkedin.com/in/yourname</a></p>
-            <p>Phone: +91-858-9900277</p>
+            <p>Phone: +971-XX-XXXXXXX</p>
         </section>
     </main>
 </body>
